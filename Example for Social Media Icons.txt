@@ -1,0 +1,114 @@
+
+<style type="text/css">
+		/*
+			Apply the primary article color to parent elements
+			so that descendent elements can inhereit the primary
+			color using the currentColor css variable
+		*/
+		.article-body,
+		.article-header,
+		.sticky-bar,
+		.article-body > p:first-child:first-letter {
+			color: #64052a;
+		}
+	</style>
+	<style type="text/css">
+	.contests__title,
+	.contests__title:after {
+		color: #1f3ca6;
+	}
+
+	.contests__item-cta .button,
+	.contests__item-cta .button:link,
+	.contests__item-cta .button:visited {
+		border-color: #1f3ca6;
+		background-color: #1f3ca6;
+	}
+
+	.contests__item-cta .button:hover,
+	.contests__item-cta .button:focus {
+		border-color: #2242b6;
+		background-color: #2242b6;
+	}
+
+	.contests__item-cta .button:active {
+		border-color: #1b3695;
+		background-color: #1b3695;
+	}
+
+	.contests__footer .artwork__image img {
+		width: 330px;
+	}
+</style>
+
+<div class="subscribe__social">
+			<div class="heading heading--h4 heading--punt-road">
+			Join the community		</div>
+		<ul class="social-share-list social-share-list--horizontal social-share-list--no-margin social-share-list--left-aligned">
+			<li class="social-share-list__item">
+			<a
+				class="social-share-button social-share-button--responsive social-share-button--chameleon"
+				href="https://www.facebook.com/99designs"
+				title="Facebook"
+				target="_blank"
+				type="facebook"
+			>
+				<span class="social-share-button__icon"></span>
+				<span class="social-share-button__label">
+					Facebook				</span>
+			</a>
+		</li>
+			<li class="social-share-list__item">
+			<a
+				class="social-share-button social-share-button--responsive social-share-button--chameleon"
+				href="https://www.twitter.com/99designs"
+				title="Twitter"
+				target="_blank"
+				type="twitter"
+			>
+				<span class="social-share-button__icon"></span>
+				<span class="social-share-button__label">
+					Twitter				</span>
+			</a>
+		</li>
+			<li class="social-share-list__item">
+			<a
+				class="social-share-button social-share-button--responsive social-share-button--chameleon"
+				href="https://www.pinterest.com/99designs/"
+				title="Pinterest"
+				target="_blank"
+				type="pinterest"
+			>
+				<span class="social-share-button__icon"></span>
+				<span class="social-share-button__label">
+					Pinterest				</span>
+			</a>
+		</li>
+			<li class="social-share-list__item">
+			<a
+				class="social-share-button social-share-button--responsive social-share-button--chameleon"
+				href="https://www.linkedin.com/company/99designs"
+				title="LinkedIn"
+				target="_blank"
+				type="linkedin"
+			>
+				<span class="social-share-button__icon"></span>
+				<span class="social-share-button__label">
+					LinkedIn				</span>
+			</a>
+		</li>
+			<li class="social-share-list__item">
+			<a
+				class="social-share-button social-share-button--responsive social-share-button--chameleon"
+				href="/blog/feed/"
+				title="RSS"
+				target="_blank"
+				type="rss"
+			>
+				<span class="social-share-button__icon"></span>
+				<span class="social-share-button__label">
+					RSS				</span>
+			</a>
+		</li>
+		</ul>
+	</div>

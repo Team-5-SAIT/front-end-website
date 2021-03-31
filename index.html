@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      function calculate() {
+        var package1 = document.getElementById('package1');
+        var radiolabel = document.getElementById('radiolabel');
+        var radioValue = $("input[name='traveler_number']:checked").val();
+        var divobj1 = document.getElementById('tot_amount1');
+        if (document.getElementById('vip').checked) {
+          divobj1.value = package1.value * radioValue + 250;
+        } 
+        else {
+          divobj1.value = package1.value * radioValue;
+        }
+      }
+    </script>
+  </head>
+
+  <!--Index page code snippets created by 'Mark Tierney and Oghenegare Uti'-->
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <h1>Welcome to Travel experts</h1>
+      </header>
+      <nav class="menu">
+        <a href="index.html">Home</a> &nbsp; &nbsp; &nbsp;
+        <a href="Userlogin.html">User Login</a> &nbsp; &nbsp; &nbsp;
+        <a href="contact.html">Contact Us</a> &nbsp; &nbsp; &nbsp;
+        <a href="Admin.html">Admin Access</a> &nbsp; &nbsp; &nbsp;
+
+        <!--&nbsp syntax used to create spaces between the nav bar elements-->
+      </nav>
+
+      <div id="description">
+        <!--Div to store description/texts of the hovered pictures in the thumbnail-->
+        How do you like to make your travel experience a memorable one?
+      </div>
+
+      <div class="gallery-container">
+        <!--Container for picture thumbnail starts here-->
+        <div class="gallery">
+          <img
+            src="images/Alberta.jpg"
+            onmouseover="changeText('WESTERN CANADA: Explore beautiful and iconic tourist destinations in western Canada')"
+            onmouseout="defaultText()"
+          />
+          <div class="desc">Western Canada Package Cost: $1,000 </div>
+        </div>
+        <div class="gallery">
+          <img
+            src="images/pyramids-2159286_640.jpg" 
+            onmouseover="changeText('EGYPT: Take a journey back in time to see the celebrated monuments of ancient Egypt')"
+            onmouseout="defaultText()"
+          /> 
+          <div class="desc">Egypt Package Cost: $1,850 </div>
+        </div>
+
+        <div class="gallery">
+          <img
+            src="images/photographer-407068_640.jpg"
+            onmouseover="changeText('JAMAICA: Checkmark your bucket lists, make memories, and leave footprints.')"
+            onmouseout="defaultText()"
+          />
+          <div class="desc">Jamaica Package Cost:$1,600 </div>
+        </div>
+
+        <div class="gallery">
+          <img
+            src="images/maldives-666122_1920.jpg"
+            onmouseover="changeText('MALDIVES: An unforgettable holiday experience in the tropical paradise, and beautiful white sandy beaches of the Maldives.')"
+            onmouseout="defaultText()"
+          />
+          <div class="desc">Maldives Package Cost: $2,250</div>
+        </div>
+
+        <div class="gallery">
+          <a href="contact.html"
+            ><img
+              src="images/animals-2178578_640.jpg"
+              onmouseover="changeText('AFRICA: Experience a once-in-a-lifetime Safari journey to have a feel of the wild-life in Africa,s Savanna.')"
+              onmouseout="defaultText()"
+          /></a>
+          <div class="desc">African Package Cost: $3,100 </a>
+            <br />
+          </div>
+        </div>
+
+        <div class="gallery">
+          <a href="Register_html"
+            ><img
+              src="images/holiday-3224482_1280.jpg"
+              onmouseover="changeText('BAHAMAS: Beautiful honeymoon get-away destinations to set the tone for your romantic adventures')"
+              onmouseout="defaultText()"
+          /></a>
+          <div class="desc">Bahamas Package Cost: $1,800</a>
+          </br>
+          </div>
+        </div>
+      </div>
+      <!--Container for picture thumbnail ends here-->
+       <!--Container for picture thumbnail ends here-->
+     <div id="wrap">
+      <form action="" id="packageform" onsubmit="return false;">
+        <div>
+          <div class="cont_order">
+            <fieldset>
+
+              <legend>Select Your Travel Package!</legend>
+              <p>
+                <label>Package Destination Selection</label>
+                <select id="package1" name='package'">
+                <option value=" None">Select Travel Package</option>
+                  <option value="1000">Western Canada($1,000))</option>
+                  <option value="1850">Egypt($1,850)</option>
+                  <option value="1600">Jamaica($1,600)</option>
+                  <option value="2250">Maldives($2,250)</option>
+                  <option value="3100">Africa($3,100)</option>
+                  <option value="1800">Bahamas($1,800)</option>
+              </p>
+              <select>
+                <p>
+                  <label>Number of Travelers</label>
+                  <label id='radiolabel'><input type="radio" name="traveler_number" value="1">One</label><br />
+                  <label id='radiolabel'><input type="radio" name="traveler_number" value="2">Two</label><br />
+                  <label id='radiolabel'><input type="radio" name="traveler_number" value="3">Three</label><br />
+                  <label id='radiolabel'><input type="radio" name="traveler_number" value="4">Four</label><br />
+                  <br />
+                </p>
+              </select>
+              <p>
+                <label for='vip' class="inlinelabel">Upgrade to VIP($250)</label>
+                <input type="checkbox" id="vip" name='vip' />
+              </p>
+
+              <div id="totalPrice">Package Total Price: $
+                <input name="tot_amount1" id="tot_amount1" type="text" readonly>
+              </div>
+              <button onclick="calculate();">Calculate</button>
+              <button type="reset">Reset</button>
+            </fieldset>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--End of wrap-->
+<!--Packages selection input options end here-->
+      <!--Container for picture thumbnail ends here-->
+
+      <footer id="foot">
+        &copy;2021 Travel experts &nbsp; All Rights Reserved.
+      </footer>
+    </div>
+  </body>
+</html>

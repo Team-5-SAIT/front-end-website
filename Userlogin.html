@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style_form.css" />
+    <script src="js/script.js"></script>
+  </head>
+
+  <!--Index page code snippets created by 'Mark Tierney and Oghenegare Uti'-->
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <h1>Welcome to Travel experts</h1>
+      </header>
+      <nav class="menu">
+        <a href="index.html">Home</a> &nbsp; &nbsp; &nbsp;
+        <a href="Userlogin.html">User Login</a> &nbsp; &nbsp; &nbsp;
+        <a href="contact.html">Contact Us</a> &nbsp; &nbsp; &nbsp;
+        <a href="Admin.html">Admin Access</a> &nbsp; &nbsp; &nbsp;
+
+
+        <!--&nbsp syntax used to create spaces between the nav bar elements-->
+      </nav>
+     <div class="shadowbox">
+        <div class="container-2">
+            <div id="error"></div>
+            <form class="my-form" id="form">
+              <div class="form-group">
+                <label>username:</label>
+                <input
+                  type="text"
+                  ,id="myuser"
+                  name="username"
+                  ;
+                  onfocus="document.getElementById('puser').style.display= 'contents'"
+                  ,
+                  onblur="document.getElementById('puser').style.display= 'none'"
+                  ,
+                  autocomplete="off"
+                  ,
+                  placeholder="Enter user name"
+                  ,
+                  required
+                />
+                <p id="puser">Please enter user-name!</p>
+              </div>
+              
+              
+              <div class="form-group">
+                <label>Password:</label>
+                <input
+                  type="password"
+                  ,
+                  id="mypassword"
+                  onfocus="document.getElementById('ppassword').style.display= 'contents'"
+                  ,
+                  onblur="document.getElementById('ppassword').style.display= 'none'"
+                  ,
+                  name="password"
+                  ,
+                  required
+                />
+                
+                <p id="ppassword">Please enter password!</p>
+              </div>
+    
+              <button
+              type="submit"
+              id="sign-in"
+            >
+              Sign-in
+            </button>
+    
+            <p>If you don't have an account with us, please register.</p>
+           <a href= "Register_to.html"> <button
+              type="button"
+              id="sign-up"
+              onClick=""
+            >
+              sign-up
+            </button></a>
+    
+    
+          </div>
+    
+          <footer id="Ad-foot">
+            &copy;2021 Travel experts &nbsp; All Rights Reserved.
+          </footer>
+     </div>
+      
+    </div>
+  </body>
+</html>

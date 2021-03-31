@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style_form.css" />
+    <script src="js/script.js"></script>
+  </head>
+
+  <!--Index page code snippets created by 'Mark Tierney and Oghenegare Uti'-->
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <h1>Welcome to Travel experts</h1>
+      </header>
+      <nav class="menu">
+        <a href="index.html">Home</a> &nbsp; &nbsp; &nbsp;
+        <a href="Userlogin.html">User Login</a> &nbsp; &nbsp; &nbsp;
+        <a href="contact.html">Contact Us</a> &nbsp; &nbsp; &nbsp;
+        <a href="Admin.html">Admin Access</a> &nbsp; &nbsp; &nbsp;
+
+
+        <!--&nbsp syntax used to create spaces between the nav bar elements-->
+      </nav>
+      <div class="shadowbox2">
+
+        <div class="container-2">
+            <div id="error"></div>
+            <form class="my-form" id="form">
+              <div class="form-group">
+                <label>Admin:</label>
+                <input
+                  type="text"
+                  ,id="myuser"
+                  name="Adminname"
+                 
+                  placeholder="Enter Username"
+                  ,
+                  required
+                />
+               
+              </div>
+              
+              
+              <div class="form-group">
+                <label>Password:</label>
+                <input
+                  type="password"
+                  ,
+                  required
+                />
+                
+                <p id="ppassword">Please enter password!</p>
+              </div>
+    
+              <button
+              type="submit"
+              id="Login"
+            >
+              Sign-in
+            </button>
+    
+            <button
+            type="reset"
+            id="reset"
+          >
+            Reset
+          </button>
+    
+    
+          </div>
+    
+      </div>
+
+      <footer id="foot">
+        &copy;2021 Travel experts &nbsp; All Rights Reserved.
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <h1>Welcome to Travel experts</h1>
+      </header>
+      <nav class="menu">
+        <a href="index.html">Home</a> &nbsp; &nbsp; &nbsp;
+        <a href="Register_to.html">Register</a> &nbsp; &nbsp; &nbsp;
+        <a href="contact.html">Contact</a> &nbsp; &nbsp; &nbsp;
+      </nav>
+
+      <!-- <aside>
+           side bar for digital advertisement
+            <h4 style="color:green">side bar for ads</h4>
+        </aside> -->
+
+      <!--<span><img src="images/carribean.jpg" alt="" class="clip-image" /></span> -->
+      <div class="parent-container">
+        <div class="contact-info">
+          <div class="info-box">
+            <img src="images/placeholder.png" class="location-icon" alt="" />
+            <div class="details">
+              <h4>Location</h4>
+              <p>
+                560 Hemdon SAIT,suite 5, <br />
+                Calgary, AB, T5J 4Y6
+              </p>
+            </div>
+          </div>
+
+          <!--Phone number section-->
+          <div class="info-box">
+            <img src="images/phone-call.png" class="phone-icon" alt="" />
+            <div class="details">
+              <h4>Telephone</h4>
+              <p><a href="tel:+1 574 727 8933">+1 574 727 8933</a></p>
+              <p><a href="tel:+1 572 642 8652">+1 572 642 8652</a></p>
+            </div>
+          </div>
+
+          <!--Email details-->
+          <div class="info-box">
+            <img src="images/gmail icon.png" class="Email-icon" alt="" />
+            <div class="details">
+              <h4>Email</h4>
+              <p>
+                <a href="mailto:TravelExperts1@project.ca"
+                  >TravelExperts1@project.ca</a
+                >
+              </p>
+              <p>
+                <a href="mailto:TravelExperts2@project.ca"
+                  >TravelExperts2@project.ca</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sMedia">
+        <img src="images/instagram (1).png" alt="" />
+        <img src="images/linkedin.png" alt="" />
+        <img src="images/facebook.png" alt="" />
+        <img src="images/twitter (1).png" alt="" />
+        <img src="images/google-plus.png" alt="" />
+      </div>
+
+      <article class="main">
+        <!--Article class incase of any body of texts or articles to include on the website-->
+      </article>
+
+      <footer id="foot">
+        &copy;2021 Travel experts &nbsp; All Rights Reserved.
+      </footer>
+    </div>
+  </body>
+</html>
+
+
+
+//css form element for the contact us form.//
